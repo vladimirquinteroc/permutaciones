@@ -1,0 +1,324 @@
+/************************************************/
+/*	Autor: Juan Antonio Juárez Morales          */
+/*	Archivo: Fiesta de las Culturas 2018	    */
+/*	Version 1.0	      						    */
+/*  Fecha: 01/04/2018						    */
+/*	Universidad La Salle Oaxaca                 */
+/*  Dirección de Tecnologias de la información  */
+/************************************************/
+
+@font-face {
+	font-family: "Lato Black";
+	src: url(../fonts/Lato-Black.ttf);
+}
+
+@font-face {
+	font-family: "Lato Light";
+	src: url(../fonts/Lato-Light.ttf);
+}
+
+@font-face {
+	font-family: "Lato Bold";
+	src: url(../fonts/Lato-Bold.ttf);
+}
+
+@font-face {
+	font-family: "Lato Regular";
+	src: url(../fonts/Lato-Regular.ttf);
+}
+
+@font-face{
+	font-family: "Lato Italic";
+	src: url(../fonts/Lato-ThinItalic.ttf);
+}
+
+@font-face{
+	font-family: "Lato BoldItalic";
+	src: url(../fonts/Lato-BoldItalic.ttf);
+}
+
+Lato-BoldItalic
+
+
+body{
+	font-family: "Lato Black", "Helvetica Neue", sans-serif;
+}
+
+
+/******************************/
+/*                            */
+/*           Nav var          */
+/*                            */
+/******************************/
+
+
+.bg-faded {
+    background-color: #ffffff !important;
+}
+
+li.nav-item{
+	color: #463c39 !important;
+	font-family: "Lato Black";
+	font-size: .9rem;
+	margin-top: .2rem;
+	margin-left: .4rem;
+	text-align: center;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.open, .navbar-light .navbar-nav .open>.nav-link {
+    color: #39312e !important;
+    border-bottom: solid .1rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+     color: #463c39 !important; 
+}
+
+/******************************/
+/*                            */
+/*           Banner           */
+/*                            */
+/******************************/
+
+.banner-img img{
+	width: 100%;
+}
+
+/******************************/
+/*                            */
+/*   Sección 1 - Bienvenida   */
+/*                            */
+/******************************/
+
+#bienvenida{
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+}
+
+.double-paragraphs{
+	-webkit-column-count: 2;
+	-moz-column-count: 2;
+	column-count: 2;
+
+	-webkit-column-gap: 2rem;
+	-moz-column-gap: 2rem;
+	column-gap: 2rem;
+
+	padding: 3rem 0;
+	text-align: justify;
+}
+
+.double-paragraphs p{
+	color: #4d4d4d;
+	font-family: "Lato Light";
+	font-size: 1.2rem;
+
+}
+
+/******************************/
+/*                            */
+/*    Sección 2 - Ganadores   */
+/*                            */
+/******************************/
+
+.ganadores-link{
+	cursor: pointer;
+}
+
+/******************************/
+/*                            */
+/*    Sección 3 - Objetivo    */
+/*                            */
+/******************************/
+
+#objetivo{
+	background-color: #d2de00;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+}
+
+.objetivo-title span{
+	font-family: "Lato Light";
+	color: #463c39;
+	font-size: 3rem;
+}
+
+.objetivo-title img{
+	vertical-align: middle;
+	margin-bottom: 2rem;
+}
+
+.objetivo-title span .objetivo-bold{
+	font-family: "Lato Bold";
+	color: #463c39;
+	font-size: 3rem;
+}
+
+.objetivo-paragraph{
+	-webkit-column-count: 2;
+	-moz-column-count: 2;
+	column-count: 2;
+
+	-webkit-column-gap: 2rem;
+	-moz-column-gap: 2rem;
+	column-gap: 2rem;
+
+	padding: 3rem 0;
+	text-align: justify;
+}
+
+.objetivo-paragraph p{
+	color: #4d4d4d;
+	font-family: "Lato Light";
+	font-size: 1.7rem;
+}
+
+/******************************/
+/*                            */
+/*    Sección 3 - Objetivo    */
+/*                            */
+/******************************/
+
+
+#justificacion{
+	background-color: #393230;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+}
+
+#justificacion h2{
+	color: #d2de00;
+	font-family: "Lato Black";
+	font-size: 2.2rem;
+	letter-spacing: 0.4rem;
+	padding-bottom: 3rem;
+}
+
+#justificacion p{
+	color: #ffffff;
+	font-family: "Lato Italic";
+	font-size: 1.7rem;
+	text-align: justify;
+}
+
+/******************************/
+/*                            */
+/*    Sección 4 - Programa    */
+/*                            */
+/******************************/
+
+#programa{
+	background: url(../images/imagen_fondo_programa.jpg) center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#programa img{
+	padding: 3rem 0;
+}
+
+/******************************/
+/*                            */
+/*    Sección 5 - Ediciones   */
+/*                            */
+/******************************/
+
+#ediciones{
+	padding: 5rem 0;
+}
+
+/******************************/
+/*                            */
+/*    Sección 6 - Contacto    */
+/*                            */
+/******************************/
+
+#contacto{
+	background-color: #e6e6e6;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+}
+
+#contacto img{
+	padding-bottom: 3rem;
+}
+
+#contacto p{
+	color: #393230;
+	font-family: "Lato Regular";
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+/******************************/
+/*                            */
+/*    	   F O O T E R        */
+/*                            */
+/******************************/
+
+footer{
+	background-color: #393230;
+	padding: 0.5rem 0;
+}
+
+footer p{
+	color: #ffffff;
+	font-family: "Lato Light";
+	font-size: .7rem;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+/******************************/
+/*                            */
+/*         Breakpoints        */
+/*                            */
+/******************************/
+
+@media (max-width: 768px) {
+
+	.img-logos{
+		width: 80%;
+	}
+
+	/******************************/
+	/*                            */
+	/*   Sección 1 - Bienvenida   */
+	/*                            */
+	/******************************/
+
+		.double-paragraphs{
+		-webkit-column-count: 1;
+		-moz-column-count: 1;
+		column-count: 1;
+
+		-webkit-column-gap: 2rem;
+		-moz-column-gap: 2rem;
+		column-gap: 2rem;
+
+		padding: 3rem 0;
+		text-align: justify;
+	}
+
+	/******************************/
+	/*                            */
+	/*    Sección 3 - Objetivo    */
+	/*                            */
+	/******************************/
+
+	.objetivo-paragraph{
+		-webkit-column-count: 1;
+		-moz-column-count: 1;
+		column-count: 1;
+
+		-webkit-column-gap: 2rem;
+		-moz-column-gap: 2rem;
+		column-gap: 2rem;
+
+		padding: 3rem 0;
+		text-align: justify;
+	}
+}
+
+

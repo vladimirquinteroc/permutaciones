@@ -1,0 +1,224 @@
+﻿/**********************************************/
+/* Descripcion: Pagina de examen Dabarc-Mabe  */
+/* Autor: Carlos Vladimir Quintero Carrasco;  */
+/* Fecha: 24 de abril de 2018;                */
+/* Version: 01;                               */
+/**********************************************/
+
+body {
+	font-family: 'Roboto', sans-serif;
+	/* COLOR DE FONDO DEGRADADO */
+	background: -moz-linear-gradient(270deg, rgba(251,250,255,1) 0%, rgba(41,71,128,1) 100%); /* ff3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(251,250,255,1)), color-stop(100%, rgba(41,71,128,1))); /* safari4+,chrome */
+	background: -webkit-linear-gradient(270deg, rgba(251,250,255,1) 0%, rgba(41,71,128,1) 100%); /* safari5.1+,chrome10+ */
+	background: -o-linear-gradient(270deg, rgba(251,250,255,1) 0%, rgba(41,71,128,1) 100%); /* opera 11.10+ */
+	background: -ms-linear-gradient(270deg, rgba(251,250,255,1) 0%, rgba(41,71,128,1) 100%); /* ie10+ */
+	background: linear-gradient(180deg, rgba(251,250,255,1) 0%, rgba(41,71,128,1) 100%); /* w3c */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FBFAFF', endColorstr='#294780',GradientType=0 ); /* ie6-9 */
+	font-size: 1rem;
+}
+
+/**********************/
+/*                    */
+/*     GENERALES      */
+/*                    */
+/**********************/
+
+a {
+	color: #33CC00;
+	font-size: 1rem;
+	font-family: 'Roboto', sans-serif;
+}
+
+section {
+	padding: 30px 20px;
+}
+
+.titulos {
+	font-size: 2rem;
+	font-weight: bold;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	padding: 15px 0px;
+}
+
+.subtitulos {
+    font-size: 1.7rem;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    padding-bottom: 15px;
+    color: #191954;
+}
+
+.hr {
+	background-color: #33CC00;
+	border-top: 5px dashed rgba(0,0,0,.1);
+	margin: 0px;
+}
+
+.flechab {
+	position: relative;
+	bottom: 25px;
+	left: 88%;
+}
+
+.flechac {
+	position: relative;
+	bottom: -5px;
+	left: 88%;
+}
+
+.flechat {
+	position: relative;
+	top: -80px;
+    left: 88%;
+}
+
+/**********************/
+/*                    */
+/*     NAVIGATION     */
+/*                    */
+/**********************/
+
+.navigation {
+    background-color: #ffffff !important;
+    padding: 2% 5%;
+    border-bottom: 10px solid #33CC00;
+}
+
+.navigation h1 {
+	font-family: 'Roboto', sans-serif;
+	color: #191954;
+}
+
+#separador-menu {
+	min-height: 40px;
+	min-width: 100%;
+}
+
+
+/**********************/
+/*                    */
+/*    CALCULADORA     */
+/*                    */
+/**********************/
+
+#calculadora {
+	background-color: #FFFFFF;
+}
+
+.container-operaciones {
+	border: 1px solid #0000CC;
+	padding: 20px 10px;
+	height: 760px;
+	max-height: 760px;
+	overflow-y: auto;
+}
+
+.container-solicitar {
+	text-align: center;
+	max-width: 80%;
+	margin: 0 auto;
+}
+
+.msj-error {
+	color: red;
+    font-weight: bold;
+    padding: 1rem 0 0;
+    height: 50px;
+}
+
+.msj-error p {
+	/*display: none;*/
+}
+
+.container-resultado {
+	display: none;
+}
+/**********************/
+/*                    */
+/*       FOOTER       */
+/*                    */
+/**********************/
+
+footer.page-footer {
+    bottom: 0;
+    color: #fff;
+}
+
+footer.page-footer .footer-copyright {
+    overflow: hidden;
+    background-color: #191954;
+    color: #FFFFFF;
+}
+
+footer p{
+	color: #ffffff;
+	font-size: 1rem;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+/******************************/
+/*                            */
+/*         Breakpoints        */
+/*                            */
+/******************************/
+
+@media (max-width: 1300px) {
+	#separador-menu {
+		min-height: 30px;
+		min-width: 100%;
+	}
+
+}
+
+@media (max-width: 1050px) {
+	#separador-menu {
+		min-height: 20px;
+		min-width: 100%;
+	}
+
+}
+
+@media (max-width: 1032px) {
+	#separador-menu {
+		min-height: 10px;
+		min-width: 100%;
+	}
+}
+
+/* OCULTAR EL DESPLEGADOR */
+@media (max-width: 467px) {
+	.flechab {
+		display: none;
+	}
+
+	.flechac {
+		display: none;
+	}
+
+	.flechat {
+		display: none;
+	}
+
+	.titulos {
+		font-size: 1.7rem;
+		font-weight: bold;
+		font-family: 'Roboto', sans-serif;
+		text-align: center;
+		padding: 15px 0px;
+	}
+
+	.subtitulos {
+	    font-size: 1.6rem;
+	    font-weight: bold;
+	    font-family: 'Roboto', sans-serif;
+	    text-align: left;
+	    padding-bottom: 15px;
+	    color: #191954;
+	}
+}
+

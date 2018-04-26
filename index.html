@@ -1,0 +1,175 @@
+<!DOCTYPE>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>PERMUTACIONES CARLOS VLADIMIR QUINTERO CARRASCO</title>
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+	<!-- Estilos CSS -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/sioax.css">
+
+	<!-- Font Awesome Icon -->
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery-3.3.1.min.js"></script>
+	<script src="assets/js/popper.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/indexJs.js"></script>
+	
+</head>
+<body>
+	<header>
+		<!-- inicio container -->
+		<div class="container">
+			<nav class="navbar fixed-top navigation">
+				<a href="http://sioax.net"><h1>SIOAX.NET</h1></a>
+			</nav>
+		</div>
+		<!-- fincontainer -->
+	</header>
+	<section>
+		<div class="container" id="separador-menu"></div>
+	</section>
+	<section id="descripcion">
+		<div class="container">
+			<div class="titulos">
+				<p>ALGORITMO DE PERMUTACIONES</p>
+			</div>
+			<div class="jumbotron">
+				<p class="subtitulos">Descripción</p>
+				<p class="lead">Información acerca de las permutaciones y las combinaciones.</p>
+				<hr class="my-4">
+				<div class="container text-justify">
+					<p>Las permutaciones son un objeto combinatorio lo suficientemente rico como para merecer atención especial. Una <b>permutación</b> del conjunto {1,...,n} es una lista de longitud <b>n</b> sin repetición formada por sus elementos; el conjunto de todas ellas lo llamaremos: <br><br></p>
+					<p class="text-center"><i>Perm ( {1,...,n} ) = { n-listas sin repetición formadas con los símbolos {1,...,n} }</i><br><br></p>
+					<p>Tomar un número específico de elementos de un grupo de disposición o conjunto y ver cómo muchas maneras diferentes los elementos se pueden seleccionar y luego arreglar. <br><br>Por ejemplo, si elige tres cartas del conjunto {la, r, s, t} Y las presenta de tantas maneras como sea posible, a obtener los arreglos de {la, r, s}: ars, asr, ras, rsa, sar, y sra- los arreglos de {la, r, t}: arte, atr, rata, rta, alquitrán, y tra- y los arreglos de {la, s, t}: ast, ats, sáb, sta, tas, y tsa- y los arreglos de {r, s, t}: primera, rts, srt, str, trs, y tsr.<br></p>
+					<p class="text-center"><b>El número de permutaciones es 24</b>.</p>
+					<p>Usted puede encontrar el número de permutaciones de <b>n</b> cosas toman <b>r</b> a la vez con la fórmula: </p><br>
+					<div class="text-center">
+						<img src="assets/imagenes/permutaciones_formula.jpg" class="text-center">
+					</div>
+					</p>
+					<p>Si gustas calcular las combionaciones posibles puedes utilizar nuestra <a href="#calculadora" role="button" rel="desplazo" >calculadora</a></p>
+					<p><b>Nota:</b> La calculadora de nuestro sitio encuentra todas las combinaciones posibles donde <b>n</b> es igual a <b>r</b>.</p>
+				</div>
+			</div>
+			<div class="text-center">
+				<p class="lead">
+			    	<a class="btn btn-primary btn-lg" href="#calculadora" role="button" rel="desplazo">CALCULADORA</a>
+				</p>
+			</div>
+			<a href="#calculadora" role="button" class="flechab" rel="desplazo" ><img src="assets/imagenes/abajo_flecha.png"></a>
+		</div><!-- /.container -->
+	</section>
+	<hr class="hr">
+	<section id="calculadora">
+		<div class="container">
+			<div class="titulos">
+				<p>CALCULADORA DE COMBINACIONES</p>
+			</div>
+			<a href="#descripcion" role="button" class="flechat" rel="desplazo" ><img src="assets/imagenes/flecha_arriba.png"></a>
+			<div class="container container-operaciones" >
+				<div class="container-solicitar">
+					<p>Esta calculadora obtiene el número y las combinaciones posibles de una serie de caracteres alfanuméricos, las combinaciones no se repiten.</p>
+					<br>
+					<div class="row">
+						<div class="col-md-3 col-sm-12"></div>
+						<div class="col-md-6 col-sm-12">
+							<label class="text-center">Introduce un caracter:</label>
+							<div class="input-group">
+								<input id="elemento" type="text" class="form-control" placeholder="Sólo un caracter, válidos: A-Z a-z 0-9 ">
+								<button id="agregar-caracter" class="btn btn-primary">
+								    <i class="fa fa-plus"></i>
+								</button>
+							</div>
+							<div id="validar-elemento" class="msj-error">
+								<p></p>
+							</div>
+							<div class="col-md-12 col-sm-12" style="padding-bottom: 1rem;">
+								<button id="buscar-combinaciones" class="btn btn-info">GENERAR</button>
+							</div>
+							<div class="col-md-12 col-sm-12">
+								<p><b>LISTA DE CARACTERES AGREGADOS</b></p>
+								<div class="table-responsive">
+									<table id="tablaElementos" class="table table-striped table-bordered table-hover text-center">
+										<thead>
+											<th>CARACTER</th>
+											<th>ELIMINAR</th>
+										</thead>
+										<tbody>
+											<tr>
+												<td colspan="2" style="color: red">Sin elementos</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 col-md-12"></div>
+					</div>
+				</div>
+				<div id="resultado-contenedor" class="container-resultado">
+					<hr style="border-color: blue;">
+					<div class="container text-center" id="numeroCombinaciones">
+						<h3>Resultados</h3>
+						<p></p>
+					</div>
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6 text-center">
+								<a href="javascript:nuevoCalculo()" class="btn btn-primary">NUEVO</a>
+							</div>
+							<div class="col-md-6 text-center">
+								<a id="exportarCombinaciones" href="#" class="btn btn-primary">EXPORTAR COMBINACIONES</a>	
+							</div>
+						</div>
+						<br><br>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="table-responsive">
+									<table id="tablaCaracteresR" class="table table-striped table-bordered table-hover text-center">
+										<thead>
+											<th>CARACTER</th>
+										</thead>
+										<tbody>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="table-responsive">
+									<table id="tablaCombinaciones" class="table table-striped table-bordered table-hover text-center">
+										<thead>
+											<th>ID</th>
+											<th>COMBINACION</th>
+										</thead>
+										<tbody>
+										</tbody>
+									</table>
+								</div>								
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<a href="#descripcion" role="button" class="flechac" rel="desplazo" ><img src="assets/imagenes/doble_arriba.png"></a>
+		</div><!-- /.container -->
+	</section>
+	<!--Footer-->
+	<footer class="page-footer pt-0">
+	    <!--Copyright-->
+	    <div class="footer-copyright py-3 text-center">
+	        <p>DABARC - MABE : <a href="http://sioax.net"> SIOAX.NET </a></p>
+	    </div>
+	    <!--/Copyright-->
+	</footer>
+	<!--/Footer-->
+</body>
+</html>
